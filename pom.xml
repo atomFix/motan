@@ -33,6 +33,7 @@
         <module>motan-registry-weibomesh</module>
         <module>motan-benchmark</module>
         <module>motan-extension</module>
+        <module>motan-example</module>
     </modules>
 
     <properties>
