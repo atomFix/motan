@@ -21,7 +21,7 @@ import com.weibo.api.motan.util.LoggerUtil;
 /**
  * 
  * @Description Initializable factory. Initializable.init() will be called before spring bean init.
- *              U can custom Initializable by SPI to do smthing before rpc start. all Initializable
+ *              U can custom Initializable by SPI to do something before rpc start. all Initializable
  *              will be init in default. U can set sequence by annotation @see
  *              com.weibo.api.motan.core.extension.Activation
  * @author zhanglei

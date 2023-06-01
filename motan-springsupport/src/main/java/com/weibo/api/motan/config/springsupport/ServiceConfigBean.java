@@ -82,9 +82,7 @@ public class ServiceConfigBean<T> extends ServiceConfig<T>
             if (MotanNamespaceHandler.basicServiceConfigDefineNames.size() == 0) {
                 if (beanFactory instanceof ListableBeanFactory) {
                     ListableBeanFactory listableBeanFactory = (ListableBeanFactory) beanFactory;
-                    String[] basicServiceConfigNames = listableBeanFactory.getBeanNamesForType
-                            (BasicServiceInterfaceConfig
-                                    .class);
+                    String[] basicServiceConfigNames = listableBeanFactory.getBeanNamesForType(BasicServiceInterfaceConfig.class);
                     MotanNamespaceHandler.basicServiceConfigDefineNames.addAll(Arrays.asList(basicServiceConfigNames));
                 }
             }
@@ -115,6 +113,7 @@ public class ServiceConfigBean<T> extends ServiceConfig<T>
         }
 
         if (CollectionUtil.isEmpty(getProtocols()) && StringUtils.isNotEmpty(getExport())) {
+
             Map<String, Integer> exportMap = ConfigUtil.parseExport(export);
             if (!exportMap.isEmpty()) {
                 List<ProtocolConfig> protos = new ArrayList<ProtocolConfig>();
