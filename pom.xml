@@ -34,6 +34,7 @@
         <module>motan-benchmark</module>
         <module>motan-extension</module>
         <module>motan-example</module>
+        <module>motan-example/motan-example-netty</module>
     </modules>
 
     <properties>
